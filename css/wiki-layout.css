@@ -1,154 +1,154 @@
 body {
-  font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  color: var(--font-default-color);
+    font-size: 16px;
+    color: var(--font-default-color);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Jua", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Jua", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #app {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
 }
 
 header {
-  padding-top: var(--page-padding);
-  width: var(--header-width);
-  background-color: var(--header-bg-color);
-  flex-shrink: 0;
+    padding-top: var(--page-padding);
+    width: var(--header-width);
+    background-color: var(--header-bg-color);
+    flex-shrink: 0;
 }
 
 h1.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1.logo span.text {
-  padding: 16px;
-  font-size: 1.8rem;
+    padding: 16px;
+    font-size: 1.8rem;
 }
 
 main {
-  padding: var(--page-padding);
+    padding: var(--page-padding);
 }
 
 h2.title {
-  font-size: 2.4rem;
-  margin-bottom: 24px;
+    font-size: 2.4rem;
+    margin-bottom: 24px;
 }
 
 h3.subtitle {
-  font-size: 1.6rem;
-  margin: var(--page-subtitle-margin-y) 0;
+    font-size: 1.6rem;
+    margin: var(--page-subtitle-margin-y) 0;
 }
 
 h4 {
-  font-size: 1.4rem;
-  margin-bottom: var(--page-subtitle-margin-y);
+    font-size: 1.4rem;
+    margin-bottom: var(--page-subtitle-margin-y);
 }
 
 section > p,
 article > p {
-  line-height: 24px;
-  text-indent: 8px;
+    line-height: 24px;
+    text-indent: 8px;
 }
 
 section,
 article {
-  display: flex;
-  flex-flow: column;
+    display: flex;
+    flex-flow: column;
 }
 
 div.thumbnail {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--page-paragraph-margin-y);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--page-paragraph-margin-y);
 }
 
 section::after {
-  content: "";
-  display: block;
-  margin-top: var(--page-subtitle-margin-y);
-  border-bottom: 1px solid var(--divider-color);
+    content: "";
+    display: block;
+    margin-top: var(--page-subtitle-margin-y);
+    border-bottom: 1px solid var(--divider-color);
 }
 
 hr {
-  border: 1px solid var(--divider-color);
+    border: 1px solid var(--divider-color);
 }
 
 aside {
-  padding-top: var(--page-padding-top);
-  width: var(--aside-width);
-  background-color: var(--aside-bg-color);
-  flex-shrink: 0;
+    padding-top: var(--page-padding-top);
+    width: var(--aside-width);
+    background-color: var(--aside-bg-color);
+    flex-shrink: 0;
 }
 
 aside h2 {
-  font-size: 1.7rem;
+    font-size: 1.7rem;
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: 100%;
-  background-position: center 100%;
-  width: var(--aside-width);
-  height: var(--aside-width);
+    background-image: url("../images/mint.jpg");
+    background-size: 100%;
+    background-position: center 100%;
+    width: var(--aside-width);
+    height: var(--aside-width);
 
-  text-indent: -1000rem;
+    text-indent: -1000rem;
 }
 
 aside.right-sidebar nav {
-  padding: var(--right-sidebar-padding);
+    padding: var(--right-sidebar-padding);
 }
 
 ol.contents {
-  list-style-type: decimal;
-  padding: 24px;
+    list-style-type: decimal;
+    padding: 24px;
 }
 
 ol.contents li:not(:last-child) {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 ol.contents li a {
-  text-decoration: none;
-  color: var(--font-default-color);
+    text-decoration: none;
+    color: var(--font-default-color);
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: var(--page-padding-top);
-  align-items: center;
-  margin: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--page-padding-top);
+    align-items: center;
+    margin: 24px;
 }
 
 footer p {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 :root {
-  --page-padding: 48px;
-  --page-subtitle-margin-y: 32px;
-  --page-paragraph-margin-y: 16px;
-  --right-sidebar-padding: 32px;
+    --page-padding: 48px;
+    --page-subtitle-margin-y: 32px;
+    --page-paragraph-margin-y: 16px;
+    --right-sidebar-padding: 32px;
 
-  --header-width: 235px;
-  --header-bg-color: #f6f6f6;
+    --header-width: 235px;
+    --header-bg-color: #f6f6f6;
 
-  --aside-width: 350px;
-  --aside-bg-color: #f6f6f6;
+    --aside-width: 350px;
+    --aside-bg-color: #f6f6f6;
 
-  --divider-color: #efefef;
-  --font-default-color: #333;
+    --divider-color: #efefef;
+    --font-default-color: #333;
 }
