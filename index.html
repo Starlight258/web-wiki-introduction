@@ -1,133 +1,248 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>자기소개 위키 페이지</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
     <script src="./js/index.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <header>
+</head>
+<body>
+<div id="app">
+    <header>
         <h1 class="logo">
-          <img src="./images/header-logo.png" alt="행성이 로고" width="166" height="147" />
-          <span class="text">크루 위키</span>
+            <img src="./images/header-logo.png" alt="행성이 로고" width="166" height="147"/>
+            <span class="text">크루 위키</span>
         </h1>
-      </header>
-      <main>
-        <h2 class="title">크론</h2>
-        <hr />
+    </header>
+    <main>
+        <h2 class="title">밍트</h2>
+        <hr/>
         <section>
-          <h3 class="subtitle">자기소개</h3>
-          <p>
-            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
-            큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
-            성취들이 모여 제가 한 걸음 더 성장했다는 것을 느낄 때면 가슴이 벅차오르거든요. 그러다 문득, 저처럼 변화를
-            갈망하며 도전을 꿈꾸는 분들이 많다는 것을 알게 되었어요. 나의 성장도 의미 있지만, 누군가의 성장을 함께할 수
-            있다는 건 매일 새로운 설렘을 주는 일이에요.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="subtitle">나를 울린 인생 작품</h3>
-          <article>
-            <h4>인생 영화</h4>
-            <div class="thumbnail">
-              <img
-                src="https://image.tmdb.org/t/p/w1280/u8ffl7CRAS12KA8eQEtkLuHg8Fm.jpg"
-                width="200"
-                alt="그래비티 영화 포스터"
-              />
-            </div>
+            <h3 class="subtitle">자기소개</h3>
             <p>
-              알폰소 쿠아론 감독이 연출하고 샌드라 불럭이 주연으로 출연하는 영화 「그래비티」는 우주 정거장에서 임무
-              수행 중 고립된 한 우주인의 생존과 귀환을 그린 작품이다. 대학생 시절 처음 본 이 영화는 당시엔 그저 지루한
-              우주 영화였다. 그런데 이 영화를 다시 보니, 마치 내 미래를 미리 보여준 복선과도 같다는 점을 깨달았다.
+                안녕하세요, 호기심이 많은 밍트에요.
+                여러 도전을 하며 겪은 경험들을 블로그에 차곡차곡 정리하고 있어요.
             </p>
-          </article>
+            <p>
+                밍트 이름의 유래는 "Mint"이고, 동글동글한 느낌을 주고 싶어서 ㅇ을 붙였어요.
+                민트처럼 깔끔한 사람이 되고싶고, 상쾌한 코드를 작성하고 싶어서 골랐어요.
+            </p>
+            <p>
+                요즘은 인생에 대한 고민을 많이 하고 있어요. MBTI가 S에서 N으로 바뀌었다는 사실,, (거의 비슷하지만요)
+            </p>
+            <p>
+                허무맹랑한 이야기도 좋고, 개발 이야기도 좋고 일상 이야기도 좋아해요 🤣
+                현재는 소프트웨어 장인이 되기 위해 노력하고 있습니다.
+            </p>
+            <p>
+                함께 성장해요~
+            </p>
         </section>
 
         <section>
-          <div class="comment-writing-container">
-            <form>
-              <fieldset>
-                <legend>댓글 쓰기</legend>
-                <textarea
-                  placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
-                ></textarea>
-              </fieldset>
-            </form>
-          </div>
-          <ul class="comment-list">
-            <li>
-              <div class="comment-item">
-                <div class="comment-author">
-                  <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
+            <h3 class="subtitle">나만의 갤러리</h3>
+            <div class="image-grid">
+                <!-- 이미지 1 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/notebook.png" alt="코딩"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">개발</h4>
+                        <p class="image-desc">뚝딱뚝딱 만들면서 점진적으로 개선해가는 과정이 좋아요.</p>
+                    </div>
                 </div>
-                <div class="comment-content">
-                  대학생 때 읽었던 모모가 문득 생각나서 다시 펼쳐봤는데, 글쓴이님 말씀처럼 정말 지금 보니까 완전 다르게
-                  다가오더라구요! 회색 신사들이 들려주는 '시간 절약'이란 말이 마치 요즘 유튜브에서 흔히 보이는 '갓생
-                  살기' 영상들 같아서 씁쓸하게 웃었습니다 ㅎㅎ 광안리 해변 이야기는 정말 이 글의 하이라이트인 것 같아요.
-                  저도 이제는 가끔은 멍때리는 시간을 가져야겠어요 :&#41;
+
+                <!-- 이미지 2 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/tea.png" alt="홍차"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">홍차</h4>
+                        <p class="image-desc">깊고 향이 좋은 홍차를 드셔보신적 있나요?</p>
+                    </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="comment-item">
-                <div class="comment-author">
-                  <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
+
+                <!-- 이미지 3 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/cat.png" alt="춘봉이"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">고양이</h4>
+                        <p class="image-desc">춘봉이 첨지! 너무 귀엽죠</p>
+                    </div>
                 </div>
-                <div class="comment-content">
-                  와... 크론이라는 닉네임의 의미를 읽고 푸지 이발사가 딱 떠올랐어요. 저도 회사에서 30분 단위로 시간
-                  쪼개서 일정 관리하다가 얼마 전에 번아웃 왔거든요 😅 시간을 아낀다고 오히려 삶을 놓치고 있었던 것
-                  같아서 마음이 찡했습니다. 글쓴이님 글 덕분에 오늘은 퇴근하고 동네 한 바퀴 돌아야겠어요~
+
+                <!-- 이미지 4 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/seokcheonliver.png" alt="석촌"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">산책</h4>
+                        <p class="image-desc">석촌 호수에서 산책 많이 해요. 울고 있다면 모르는 척 해주세요.</p>
+                    </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="comment-item">
-                <div class="comment-author">
-                  <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지" />
-                  <span>방문자</span>
+
+                <!-- 이미지 5 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/travel.png" alt="여행"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">여행</h4>
+                        <p class="image-desc">자유로움을 만끽할 수 있는 여행을 좋아해요. 혼자서도 좋고 친구와도 좋아요.</p>
+                    </div>
                 </div>
-                <div class="comment-content">
-                  이 글 읽으면서 계속 고개를 끄덕였네요 👍 특히 자기계발서 이야기... 저도 요즘 '갓생살기' 영상 보면서
-                  조급해졌었는데, 모모 다시 읽어봐야겠어요! 시간은 아끼는 게 아니라 느끼는 거라는 말에 완전 공감입니다.
-                  저도 이제는 하루에 한 번은 커피 마시면서 창밖 구경하기로 했어요 ☕️
+
+                <!-- 이미지 6 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/food.png" alt="음식"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">음식</h4>
+                        <p class="image-desc">세상에는(특히 한국) 맛있는 음식이 왜이렇게 많을까요? 행복합니다. (건강 : 안행복해)</p>
+                    </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+
+                <!-- 이미지 7 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/sleep.png" alt="숙면"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">숙면</h4>
+                        <p class="image-desc">푹 자면 모든 일이 다 괜찮아질거에요.</p>
+                    </div>
+                </div>
+
+                <!-- 이미지 8 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/friend.png" alt="우정"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">우정</h4>
+                        <p class="image-desc">친구랑 속 깊은 이야기를 하는 것을 좋아해요. 허무맹랑한 소리를 해도 괜찮아요. 재밌으니까!</p>
+                    </div>
+                </div>
+
+                <!-- 이미지 9 -->
+                <div class="image-card">
+                    <div class="thumbnail">
+                        <img src="images/movie.png" alt="영화"/>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">영화, 드라마</h4>
+                        <p class="image-desc">간접적으로 다른 사람의 인생을 체험해볼 수 있는 영상물들을 좋아해요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="subtitle">나를 울린 인생 작품</h3>
+            <article>
+                <h4>인생 영화</h4>
+                <div class="thumbnail">
+                    <img
+                            src="https://image.tmdb.org/t/p/w1280/u8ffl7CRAS12KA8eQEtkLuHg8Fm.jpg"
+                            width="200"
+                            alt="그래비티 영화 포스터"
+                    />
+                </div>
+                <p>
+                    알폰소 쿠아론 감독이 연출하고 샌드라 불럭이 주연으로 출연하는 영화 「그래비티」는 우주 정거장에서 임무
+                    수행 중 고립된 한 우주인의 생존과 귀환을 그린 작품이다. 대학생 시절 처음 본 이 영화는 당시엔 그저 지루한
+                    우주 영화였다. 그런데 이 영화를 다시 보니, 마치 내 미래를 미리 보여준 복선과도 같다는 점을 깨달았다.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <div class="comment-writing-container">
+                <form>
+                    <fieldset>
+                        <legend>댓글 쓰기</legend>
+                        <textarea
+                                placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
+                        ></textarea>
+                    </fieldset>
+                </form>
+            </div>
+            <ul class="comment-list">
+                <li>
+                    <div class="comment-item">
+                        <div class="comment-author">
+                            <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지"/>
+                            <span>방문자</span>
+                        </div>
+                        <div class="comment-content">
+                            대학생 때 읽었던 모모가 문득 생각나서 다시 펼쳐봤는데, 글쓴이님 말씀처럼 정말 지금 보니까 완전 다르게
+                            다가오더라구요! 회색 신사들이 들려주는 '시간 절약'이란 말이 마치 요즘 유튜브에서 흔히 보이는 '갓생
+                            살기' 영상들 같아서 씁쓸하게 웃었습니다 ㅎㅎ 광안리 해변 이야기는 정말 이 글의 하이라이트인 것 같아요.
+                            저도 이제는 가끔은 멍때리는 시간을 가져야겠어요 :&#41;
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-item">
+                        <div class="comment-author">
+                            <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지"/>
+                            <span>방문자</span>
+                        </div>
+                        <div class="comment-content">
+                            와... 크론이라는 닉네임의 의미를 읽고 푸지 이발사가 딱 떠올랐어요. 저도 회사에서 30분 단위로 시간
+                            쪼개서 일정 관리하다가 얼마 전에 번아웃 왔거든요 😅 시간을 아낀다고 오히려 삶을 놓치고 있었던 것
+                            같아서 마음이 찡했습니다. 글쓴이님 글 덕분에 오늘은 퇴근하고 동네 한 바퀴 돌아야겠어요~
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comment-item">
+                        <div class="comment-author">
+                            <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지"/>
+                            <span>방문자</span>
+                        </div>
+                        <div class="comment-content">
+                            이 글 읽으면서 계속 고개를 끄덕였네요 👍 특히 자기계발서 이야기... 저도 요즘 '갓생살기' 영상 보면서
+                            조급해졌었는데, 모모 다시 읽어봐야겠어요! 시간은 아끼는 게 아니라 느끼는 거라는 말에 완전 공감입니다.
+                            저도 이제는 하루에 한 번은 커피 마시면서 창밖 구경하기로 했어요 ☕️
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <footer>
-          <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
-          <p>&copy; 우아한테크코스 All Rights reserved.</p>
+            <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고"/>
+            <p>&copy; 우아한테크코스 All Rights reserved.</p>
         </footer>
-      </main>
-      <aside class="right-sidebar">
-        <div class="profile-image">크론 프로필 이미지</div>
+    </main>
+    <aside class="right-sidebar">
+        <div class="profile-image">밍트 프로필 이미지</div>
         <nav>
-          <h2>Contents</h2>
-          <ol class="contents">
-            <li>
-              <a href="#">자기소개</a>
-            </li>
-            <li>
-              <a href="#">나만의 갤러리</a>
-            </li>
-            <li>
-              <a href="#">나를 울린 인생 작품</a>
-            </li>
-            <li>
-              <a href="#">감상평</a>
-            </li>
-          </ol>
+            <h2>Contents</h2>
+            <ol class="contents">
+                <li>
+                    <a href="#">자기소개</a>
+                </li>
+                <li>
+                    <a href="#">나만의 갤러리</a>
+                </li>
+                <li>
+                    <a href="#">나를 울린 인생 작품</a>
+                </li>
+                <li>
+                    <a href="#">감상평</a>
+                </li>
+            </ol>
         </nav>
-      </aside>
-    </div>
-  </body>
+    </aside>
+</div>
+</body>
 </html>
